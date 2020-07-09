@@ -1,0 +1,165 @@
+body {
+    font-family: "Avenir Next Cyr Medium", sans-serif;
+    background: linear-gradient(-135deg, #0642ba, #02bbec);
+    text-align: center;
+}
+
+header {
+    position: relative;
+    word-spacing: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.start-modal {
+    width: 100%;
+    max-width: 500px;
+    height: calc(100vh - 115px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #1c1c1c;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.settings {
+    color: white;
+}
+
+.settings div {
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+
+.settings div:hover {
+    cursor: pointer;
+    color: #02bbec;
+}
+
+#selected-level {
+    font-size: 50px;
+    color: #02bbec;
+}
+
+.end-modal {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    height: calc(100vh - 100px);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #1c1c1c;
+    transition: 0.5s;
+}
+
+.game-over {
+    width: 320px;
+    font-size: 40px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.play-img {
+    background-image: url("../img/play-button.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.pause-icon {
+    display: none;
+    background-image: url("../img/pause-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.start-icon {
+    background-image: url("../img/play-button.png") !important;
+}
+
+#main {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4F5957;
+    box-shadow: 0 14px 39px 8px #6e5e5e;
+    height: calc(100vh - 127px);
+    margin: 5px auto 25px;
+
+}
+
+.column {
+    width: 10%;
+    border: 1px solid #727070;
+    box-sizing: border-box;
+    box-shadow: 0 12px 18px -6px black;
+}
+
+.figure {
+    border: none;
+    box-shadow: 0 11px 37px 0 black;
+}
+
+.reached-figure {
+    border: none;
+    background-color: green;
+    box-shadow: 0 11px 37px 0 black;
+}
+
+.play-icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+.rePlay-icon {
+    display: none;
+    margin: 20px auto;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    padding: 4px 10px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        text-align: left;
+        font-size: 45px;
+    }
+
+    .pause-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
